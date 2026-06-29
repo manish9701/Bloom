@@ -8,8 +8,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
+    "build:web": "expo export --platform web",
     "typecheck": "tsc --noEmit",
-    "setup": "npm install && echo Copy .env.template to .env and add your OpenRouter key for full AI.",
+    "setup": "npm install && echo Copy .env.template to .env and add your Google AI key for full AI.",
     "setup:dynamodb": "node setup-dynamodb.js",
     "test:dynamo": "node test-dynamo.js",
     "check:schema": "node check-table-schema.js"
