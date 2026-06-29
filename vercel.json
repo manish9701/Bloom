@@ -1,21 +1,7 @@
 {
-  "buildCommand": "expo export --platform web",
+  "buildCommand": "npm run build:web",
   "outputDirectory": "dist",
-  "framework": "expo",
-  "env": {
-    "EXPO_PUBLIC_GOOGLE_AI_KEY": "@google_ai_key",
-    "AWS_REGION": "@aws_region",
-    "AWS_ACCESS_KEY_ID": "@aws_access_key",
-    "AWS_SECRET_ACCESS_KEY": "@aws_secret_key",
-    "DYNAMO_TABLE_NAME": "@dynamo_table"
-  },
-  "routes": [
-    {
-      "src": "/(.*)",
-      "status": 200,
-      "dest": "/index.html"
-    }
-  ],
+  "installCommand": "npm install",
   "rewrites": [
     {
       "source": "/:path*",
